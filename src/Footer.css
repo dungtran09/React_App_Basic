@@ -5,3 +5,8 @@
   padding: 68px 0 40px;
   margin-top: 30px;
 }
+
+.Footer > p {
+  text-align: center;
+  font-family: sans-serif;
+}
