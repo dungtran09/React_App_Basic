@@ -1,13 +1,15 @@
 import React from "react";
 import "./App.css";
 import Title from "./Title";
-import POPOPList from "./POPOPList";
+import POPOSList from "./POPOSList";
+import Footer from "./Footer";
 
 function App() {
   return (
     <div className="App">
       <Title />
-      <POPOPList />
+      <POPOSList />
+      <Footer />
     </div>
   );
 }
