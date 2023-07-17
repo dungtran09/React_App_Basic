@@ -1,5 +1,6 @@
 import React from "react";
 import "../POPOSSpace/POPOSSpace.js";
+import "./POPOSSpace.css";
 import { Link } from "react-router-dom";
 
 function POPOSSpace(props) {
@@ -7,17 +8,19 @@ function POPOSSpace(props) {
 
   return (
     <div className="POPOSSpace">
-      <Link to={`/details/${id}`}>
-        <img
-          src={`${process.env.PUBLIC_URL}images/${image}`}
-          width="300"
-          height="300"
-          alt="600 Montgomery St."
-        />
+      <img
+        src={`${process.env.PUBLIC_URL}images/${image}`}
+        width="300"
+        height="300"
+        alt="600 Montgomery St."
+      />
+      <Link className="POPOSSpace-title" to={`/details/${id}`}>
         <h3>{name}</h3>
       </Link>
-      <p>{hours}</p>
-      <div>{address}</div>
+      <div className="POPOSSpace-info">
+        <p>{hours}</p>
+        <p>{address}</p>
+      </div>
     </div>
   );
 }
